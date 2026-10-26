@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-io"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "I/O subsystem and device drivers"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-io"
+readme = "README.md"
+keywords = ["io", "driver", "subsystem"]
+categories = ["os"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
