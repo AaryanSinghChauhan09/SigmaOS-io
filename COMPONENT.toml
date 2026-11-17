@@ -3,12 +3,12 @@ name = "SigmaOS-io"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "io component"
+description = "SigmaOS I/O subsystem, drivers, and device interfaces"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
